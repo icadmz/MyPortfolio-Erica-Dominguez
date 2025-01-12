@@ -1,6 +1,16 @@
 import './App.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import resume from '/public/erica-resume.pdf';
+import pfp from './src/assets/pfp.png';
+import html from './src/assets/html.png';
+import css from './src/assets/css.png';
+import js from './src/assets/javascript.png';
+import reactjs from './src/assets/react.png';
+import nodejs from './src/assets/node js.png';
+import bookwithddc from './src/assets/bookwithddc.png';
+import nintendo from './src/assets/nintendo.png';
+import summative from './src/assets/summative.png';
+import cozycat from './src/assets/cozycat.png';
 
 function App() {
 
@@ -9,7 +19,7 @@ function App() {
       {/* First Column: Profile Section */}
       <div className="column profile">
         <img
-          src="./src/assets/pfp.png"
+          src={pfp}
           alt="Erica Dominguez"
           className="profile-image"
         />
@@ -61,11 +71,11 @@ function App() {
             <section className="skills">
               <h3>FRONTEND SKILLS</h3>
               <div className="skills-icons">
-                <img src="./src/assets/html.png" alt="HTML5" />
-                <img src="./src/assets/css.png" alt="CSS3" />
-                <img src="./src/assets/javascript.png" alt="JavaScript" />
-                <img src="./src/assets/react.png" alt="React" />
-                <img src="./src/assets/node js.png" alt="Node.js" />
+                <img src={html} alt="HTML5" />
+                <img src={css} alt="CSS3" />
+                <img src={js} alt="JavaScript" />
+                <img src={reactjs} alt="React" />
+                <img src={nodejs} alt="Node.js" />
               </div>
               <p>Using <strong>Visual Studio Code</strong> as the <em>IDE</em></p>
             </section>
@@ -87,7 +97,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{textDecoration: 'none'}}>
-                    <img src="./src/assets/bookwithddc.png"
+                    <img src={bookwithddc}
                       alt="DDC Thumbnail"
                       className="thumbnail"/>
                   </a>
@@ -118,7 +128,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{textDecoration: 'none'}}>
-                    <img src="./src/assets/nintendo.png"
+                    <img src={nintendo}
                       alt="Nintendo Thumbnail"
                       className="thumbnail"/>
                     </a>
@@ -149,7 +159,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{textDecoration: 'none'}}>
-                    <img src="./src/assets/summative.png"
+                    <img src={summative}
                       alt="Summative Thumbnail"
                       className="thumbnail"/>
                     </a>
@@ -179,7 +189,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{textDecoration: 'none'}}>
-                    <img src="./src/assets/cozycat.png"
+                    <img src={cozycat}
                       alt="Cozy Cat Thumbnail"
                       className="thumbnail"/>
                     </a>
