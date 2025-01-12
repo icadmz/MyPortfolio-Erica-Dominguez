@@ -1,16 +1,16 @@
 import './App.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import resume from '/public/erica-resume.pdf';
-import pfp from './src/assets/pfp.png';
-import html from './src/assets/html.png';
-import css from './src/assets/css.png';
-import js from './src/assets/javascript.png';
-import reactjs from './src/assets/react.png';
-import nodejs from './src/assets/node js.png';
-import bookwithddc from './src/assets/bookwithddc.png';
-import nintendo from './src/assets/nintendo.png';
-import summative from './src/assets/summative.png';
-import cozycat from './src/assets/cozycat.png';
+import pfp from '/public/pfp.png';
+import html from '/public/html.png';
+import css from '/public/css.png';
+import js from '/public/javascript.png';
+import reactjs from '/public/react.png';
+import nodejs from '/public/node js.png';
+import bookwithddc from '/public/bookwithddc.png';
+import nintendo from '/public/nintendo.png';
+import summative from '/public/summative.png';
+import cozycat from '/public/cozycat.png';
 
 function App() {
 
