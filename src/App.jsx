@@ -23,6 +23,7 @@ import bookwithddc from '/public/bookwithddc.png';
 import nintendo from '/public/nintendo.png';
 import summative from '/public/summative.png';
 import cozycat from '/public/cozycat.png';
+import primefact from '/public/primefact.png';
 
 function App() {
 
@@ -108,7 +109,7 @@ function App() {
           <div cllassName="details-row">
             {/* PROJECTS SECTION */}
           <section className="projects">
-            <h3>ACADEMIC PROJECTS</h3>
+            <h3>PROJECTS</h3>
             <div className="project-cards">
 
               {/* Book with DDC */}
@@ -252,6 +253,39 @@ function App() {
                   <button className="view-demo-button">View Video Demo <i className="bi bi-box-arrow-up-right"></i></button>
                 </a>
                 {/* Canva Link: https://www.canva.com/design/DAGb-yuTbZk/tneCxC-HE3_avr2gj6i-_w/watch?utm_content=DAGb-yuTbZk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9fe373c925 */}
+              </div>
+              
+              {/* Prime Factorial */}
+              <div className="project-card">
+
+                {/* thumbnail */}
+                <div className="iframe-container">
+                  <a href="https://drive.google.com/file/d/1qNYJpkS4h0geO6nZUWuPhZv0-1xr9Cws/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{textDecoration: 'none'}}>
+                    <img src={primefact}
+                      alt="Prime Factorial Thumbnail"
+                      className="thumbnail"/>
+                 </a>
+                </div>
+
+                {/* text */}
+                <h4>Prime Factorial</h4>
+                <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                <div className="project-text-content">
+                  <p> A single-page web application providing users with two core mathematical utilities: prime number 
+                  checking and factorial calculation. Users can input a number and instantly view the results.
+                  </p>
+                </div>
+
+                {/* button */}
+                <a href="https://drive.google.com/file/d/1qNYJpkS4h0geO6nZUWuPhZv0-1xr9Cws/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{textDecoration: 'none'}}>
+                  <button className="view-demo-button">View Video Demo <i className="bi bi-box-arrow-up-right"></i></button>
+                </a>
               </div>
 
             </div>
