@@ -24,6 +24,7 @@ import nintendo from '/public/nintendo.png';
 import summative from '/public/summative.png';
 import cozycat from '/public/cozycat.png';
 import primefact from '/public/primefact.png';
+import icastasks from '/public/icastasks.png';
 
 function App() {
 
@@ -183,6 +184,42 @@ function App() {
                   <button className="view-demo-button">View Video Demo <i className="bi bi-box-arrow-up-right"></i></button>
                 </a>
                 {/* Canva Link: https://www.canva.com/design/DAGb9rH5xRQ/7wTungzBc9veKRUsC9z0ig/watch?utm_content=DAGb9rH5xRQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0fbccaa510 */}
+              </div>
+
+              {/* Ica's Tasks */}
+              <div className="project-card">
+
+                {/* thumbnail */}
+                <div className="iframe-container">
+                  <a href="https://drive.google.com/file/d/1MvJctiV2dXtdb6xCyhgY3V--_1YBnYIx/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{textDecoration: 'none'}}>
+                    <img src={icastasks}
+                      alt="Ica's Tasks Thumbnail"
+                      className="thumbnail"/>
+                  </a>
+                  {/* Canva Link: https://www.canva.com/design/DAGb9armKyc/rYOv49Qpx6eRc1CPmuq76A/watch?utm_content=DAGb9armKyc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb5cd4f7d4 */}
+                </div>
+
+                {/* text */}
+                <h4>Ica's Tasks</h4>
+                <h2><i class="bi bi-clock"></i>Complete</h2>
+                <div className="project-text-content">
+                <p> Ica's Tasks is a to-do list desktop widget I developed to provide a dedicated, lightweight application for 
+                  managing tasks right on the screen. This personal project was built using Electron to deliver that native desktop feel, 
+                  with the frontend implemented in React and TypeScript. To handle the application’s data storage, I utilized MongoDB.
+                </p>
+                </div>
+
+                {/* button */}
+                <a href="https://drive.google.com/file/d/1MvJctiV2dXtdb6xCyhgY3V--_1YBnYIx/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{textDecoration: 'none'}}>
+                  <button className="view-demo-button">View Video Demo <i className="bi bi-box-arrow-up-right"></i></button>
+                </a>
+                {/* Canva Link: https://www.canva.com/design/DAGb9armKyc/rYOv49Qpx6eRc1CPmuq76A/watch?utm_content=DAGb9armKyc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb5cd4f7d4 */}
               </div>
 
               {/* Summative */}
