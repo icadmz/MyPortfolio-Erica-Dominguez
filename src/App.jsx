@@ -37,7 +37,7 @@ function App() {
           alt="Erica Dominguez"
           className="profile-image"
         />
-        <h2>ERICA <br /> DOMINGUEZ</h2>
+        <h2>ERICA THERESE <br /> DOMINGUEZ</h2>
         <div className="icons">
           <a href="mailto:ericaatherese@gmail.com"
             target="_blank"
@@ -52,7 +52,7 @@ function App() {
             <i className="bi bi-linkedin"></i>
           </a>
         </div>
-        <p>An aspiring web and software developer. Passionate in developing modern and sleek websites.</p>
+        <p>An aspiring web and software developer passionate about developing modern, sleek websites and applications.</p>
         <a href={resume} download>
           <button className="resume-button">Download Resume <i className="bi bi-download"></i></button> 
         </a>
