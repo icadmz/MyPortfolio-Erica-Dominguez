@@ -1,7 +1,7 @@
 import './App.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import resume from '/public/Resume-Erica Dominguez.pdf';
-import pfp from '/public/pfp.png';
+import pfp from '/public/pfp.jpg';
 import html from '/public/html.png';
 import css from '/public/css.png';
 import js from '/public/javascript.png';
@@ -36,6 +36,7 @@ function App() {
           src={pfp}
           alt="Erica Dominguez"
           className="profile-image"
+          style={{ borderRadius: '50%' }}
         />
         <h2>Erica Therese <br /> Dominguez</h2>
         <div className="icons">
@@ -50,6 +51,12 @@ function App() {
             rel="noopener noreferrer"
             style={{textDecoration: 'none'}}>
             <i className="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/icadmz"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{textDecoration: 'none'}}>
+            <i className="bi bi-github"></i>
           </a>
         </div>
         <p>An aspiring web and software developer passionate about developing modern, sleek websites and applications.</p>
@@ -107,7 +114,7 @@ function App() {
           
           </div>
           
-          <div cllassName="details-row">
+          <div className="details-row">
             {/* PROJECTS SECTION */}
           <section className="projects">
             <h3>Projects</h3>

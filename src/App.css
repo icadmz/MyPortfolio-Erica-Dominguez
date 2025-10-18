@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import './assets/colors.css';
 
 * {
   margin: 0;
@@ -21,8 +22,8 @@ button {
 }
 
 button:hover {
-  border: 1px solid #97c2ec;
-  color: #97c2ec;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
   background-color: transparent;
 }
 
@@ -32,7 +33,7 @@ button:hover {
   margin: auto;
   gap: 20px;
   font-family: 'Quicksand', sans-serif;
-  color: #1f1f1f;
+  color: var(--color-text-black);
   padding: 20px;
 }
 
@@ -42,10 +43,9 @@ button:hover {
   
 }
 
-
 .profile {
   text-align: center;
-  border: 2px solid #d6d0c2;
+  border: 2px solid var(--color-primary);
   padding: 20px;
   max-width: 230px;
   background-color: #ffffff;
@@ -66,12 +66,13 @@ button:hover {
 }
 
 .resume-button {
-  background-color: #97c2ec;
+  background-color: var(--color-secondary);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  color: var(--color-text-white);
 }
 
 .details {
@@ -100,7 +101,7 @@ button:hover {
 
 /* EDUCATION */
 .education, .skills, .projects {
-  border: 2px solid #d6d0c2;
+  border: 2px solid #2B2F41; /* #d6d0c2 */
   /* margin-bottom: 1.5rem; */
   background-color: #ffffff;
   padding: 0;
@@ -111,16 +112,15 @@ button:hover {
 }
 
 .education h3, .skills h3, .projects h3 {
-  background-color: #d6d0c2;
+  background-color: #2B2F41; /* #d6d0c2 */
   padding: 10px;
   padding-left: 1.5rem;
-  
   text-align: left;
   margin-bottom: 15px;
   margin-top: 0;
   margin-bottom: 0;
-  border-bottom: 2px solid #d6d0c2;
-  
+  border-bottom: 2px solid #2B2F41; /* #d6d0c2 */
+  color: var(--color-text-white);
 }
 
 .education-card {
@@ -134,7 +134,7 @@ button:hover {
 
 .icon-column {
   font-size: 2em;
-  color: #97c2ec;
+  color: var(--color-secondary);
   margin-right: 1rem;
 }
 
@@ -286,7 +286,8 @@ h4 {
 }
 
 .view-demo-button {
-  background-color: #97c2ec;
+  background-color: var(--color-secondary);
+  color: var(--color-text-white);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
