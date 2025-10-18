@@ -37,7 +37,7 @@ function App() {
           alt="Erica Dominguez"
           className="profile-image"
         />
-        <h2>ERICA THERESE <br /> DOMINGUEZ</h2>
+        <h2>Erica Therese <br /> Dominguez</h2>
         <div className="icons">
           <a href="mailto:ericaatherese@gmail.com"
             target="_blank"
@@ -64,7 +64,7 @@ function App() {
           <div className="details-row">
             {/* Education Section */} 
             <section className="education">
-              <h3>EDUCATION</h3>
+              <h3>Education</h3>
               <div className="education-card">
                 <div className="icon-column">
                   <i className="bi bi-mortarboard-fill"></i>
@@ -82,7 +82,7 @@ function App() {
 
             {/* Skills Section */}
             <section className="skills">
-              <h3>TECHNICAL SKILLS</h3>
+              <h3>Technical Skills</h3>
               <div className="skills-icons">
                 <img src={html} alt="HTML5" />
                 <img src={css} alt="CSS3" />
@@ -110,7 +110,7 @@ function App() {
           <div cllassName="details-row">
             {/* PROJECTS SECTION */}
           <section className="projects">
-            <h3>PROJECTS</h3>
+            <h3>Projects</h3>
             <div className="project-cards">
 
               {/* Book with DDC */}
@@ -132,7 +132,10 @@ function App() {
                 {/* text */}
                 {/* <div className="project-text-content"> */}
                 <h4>Book with DDC</h4>
-                <h2><i class="bi bi-clock"></i>Complete</h2>
+                <div>
+                  <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                  <h2><i class="bi bi-stack"></i>C#, JavaScript, ASP.NET MVC, MSSQL</h2>
+                </div>
                 <div className="project-text-content">
                 <p>"Book with DDC" is a web-based appointment management system designed for Dominguez Dental Clinic, which was the focus of my capstone project. 
                   I collaborated with two team members on its development using the ASP.NET MVC framework with MSSQL for the database management. 
@@ -168,7 +171,10 @@ function App() {
 
                 {/* text */}
                 <h4>Nintendo Switch Accessories</h4>
-                <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                <div>
+                  <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                  <h2><i class="bi bi-stack"></i>HTML, CSS, JavaScript</h2> 
+                </div>
                 <div className="project-text-content">
                   <p>This is a simple e-commerce website I created for an academic assessment. The site features three pages: Home, Shop, and Contact. I built the entire 
                     project using HTML, CSS, and JavaScript. I did not use a database for this project, so everything is hardcoded. I also made this website responsive 
@@ -204,7 +210,10 @@ function App() {
 
                 {/* text */}
                 <h4>Ica's Tasks</h4>
-                <h2><i class="bi bi-clock"></i>Complete</h2>
+                <div>
+                  <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                  <h2><i class="bi bi-stack"></i>Electron, React, TypeScript, MongoDB</h2>  
+                </div>
                 <div className="project-text-content">
                 <p> Ica's Tasks is a to-do list desktop widget I developed to provide a dedicated, lightweight application for 
                   managing tasks right on the screen. This personal project was built using Electron to deliver that native desktop feel, 
@@ -240,7 +249,10 @@ function App() {
 
                 {/* text */}
                 <h4>S-ITPE003LA Summative Exam</h4>
-                <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                <div>
+                  <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                  <h2><i class="bi bi-stack"></i>JavaScript, Node.js, MongoDB</h2>  
+                </div>
                 <div className="project-text-content">
                   <p>This project was my final summative exam for an IT Professional Elective course. 
                     Along with HTML, CSS, and JavaScript, I used Node JS in this project as well as MongoDB for the database. 
@@ -275,7 +287,10 @@ function App() {
 
                 {/* text */}
                 <h4>Cozy Cat Shop</h4>
-                <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                <div>
+                  <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                  <h2><i class="bi bi-stack"></i>Figma, Procreate, Adobe Illustrator</h2>  
+                </div>
                 <div className="project-text-content">
                   <p>I also have UI/UX design projects created in Figma, including this one. Cozy Cat is another e-commerce website for cat products, 
                     featuring graphics I designed myself—digitally drawn in Procreate and enhanced in Adobe Illustrator.   
@@ -309,7 +324,10 @@ function App() {
 
                 {/* text */}
                 <h4>Prime Factorial</h4>
-                <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                <div>
+                  <h2><i class="bi bi-check-circle"></i>Complete</h2>
+                  <h2><i class="bi bi-stack"></i>C#, ASP.NET, JavaScript</h2>  
+                </div>
                 <div className="project-text-content">
                   <p> A single-page web application providing users with two core mathematical utilities: prime number 
                   checking and factorial calculation. Users can input a number and instantly view the results.

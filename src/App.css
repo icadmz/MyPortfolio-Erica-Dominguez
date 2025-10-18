@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ p {
 }
 
 button {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Quicksand', sans-serif;
   color: #1f1f1f;
   font-weight: bold;
 }
@@ -29,7 +31,7 @@ button:hover {
   max-width: 1400px;
   margin: auto;
   gap: 20px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Quicksand', sans-serif;
   color: #1f1f1f;
   padding: 20px;
 }
@@ -88,6 +90,8 @@ button:hover {
   font-size: 1.5em;
   margin: 0 8px;
   color: #d6d0c2;
+  /* color: #97c2ec; */
+  transition: color 0.3s ease;
 }
 
 .icons i:hover {
