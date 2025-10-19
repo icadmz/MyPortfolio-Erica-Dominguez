@@ -33,7 +33,7 @@ button:hover {
   margin: auto;
   gap: 20px;
   font-family: 'Quicksand', sans-serif;
-  color: var(--color-text-black);
+  color: var(--color-black);
   padding: 20px;
 }
 
@@ -48,7 +48,7 @@ button:hover {
   border: 2px solid var(--color-primary);
   padding: 20px;
   max-width: 230px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  color: var(--color-text-white);
+  color: var(--color-white);
 }
 
 .details {
@@ -90,18 +90,18 @@ button:hover {
 .icons i {
   font-size: 1.5em;
   margin: 0 8px;
-  color: #d6d0c2;
+  color: var(--color-tertiary);
   /* color: #97c2ec; */
   transition: color 0.3s ease;
 }
 
 .icons i:hover {
-  color: #eeebe2;
+  color: var(--color-tertiary-hover);
 }
 
 /* EDUCATION */
 .education, .skills, .projects {
-  border: 2px solid #2B2F41; /* #d6d0c2 */
+  border: 2px solid var(--color-primary);
   /* margin-bottom: 1.5rem; */
   background-color: #ffffff;
   padding: 0;
@@ -112,15 +112,15 @@ button:hover {
 }
 
 .education h3, .skills h3, .projects h3 {
-  background-color: #2B2F41; /* #d6d0c2 */
+  background-color: var(--color-primary);
   padding: 10px;
   padding-left: 1.5rem;
   text-align: left;
   margin-bottom: 15px;
   margin-top: 0;
   margin-bottom: 0;
-  border-bottom: 2px solid #2B2F41; /* #d6d0c2 */
-  color: var(--color-text-white);
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-white);
 }
 
 .education-card {
@@ -194,6 +194,8 @@ button:hover {
   max-width: 35px;
   width: 100%;
   height: auto;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 /* PROJECTS */
@@ -287,7 +289,7 @@ h4 {
 
 .view-demo-button {
   background-color: var(--color-secondary);
-  color: var(--color-text-white);
+  color: var(--color-white);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -351,6 +353,35 @@ h4 {
 
 .profile, .education, .skills, .projects {
   animation: slideIn 2s ease-in-out; 
+}
+
+/* TOOLTIP */
+.skill-tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 5px; 
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 125%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity .3s;
+  font-size: 12px;
+}
+
+.skill-tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* MEDIA QUERIES */
