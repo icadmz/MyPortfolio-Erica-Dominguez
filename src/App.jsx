@@ -90,7 +90,7 @@ function App() {
           <div className="details-row">
           {/* Projects Section */}
           <section className="projects">
-            <h3>Projects</h3>
+            <h3>Notable Projects</h3>
             <div className="project-cards">
                 {PROJECT_DATA.map((project) => (
                     <div className="project-card" key={project.title}>
