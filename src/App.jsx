@@ -90,7 +90,7 @@ function App() {
           <div className="details-row">
           {/* Projects Section */}
           <section className="projects">
-            <h3>Notable Projects</h3>
+            <h3>Projects</h3>
             <div className="project-cards">
                 {PROJECT_DATA.map((project) => (
                     <div className="project-card" key={project.title}>
@@ -114,7 +114,17 @@ function App() {
                         {/* Text Content */}
                         <h4>{project.title}</h4>
                         <div>
-                            <h2><i className="bi bi-check-circle"></i>{project.status}</h2>
+                            <h2>
+                              <i
+                                className={`bi ${
+                                  project.status &&
+                                  project.status.toLowerCase().includes('complete')
+                                    ? 'bi-check-circle'
+                                    : 'bi-clock'
+                                }`}
+                              ></i>
+                              {project.status}
+                            </h2>                            
                             <h2><i className="bi bi-stack"></i>{project.tech}</h2>
                         </div>
                         <div className="project-text-content">

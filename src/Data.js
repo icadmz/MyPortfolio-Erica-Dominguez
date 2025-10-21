@@ -25,6 +25,7 @@ import summative from "./assets/images/summative.png";
 import cozycat from "./assets/images/cozycat.png";
 import primefact from "./assets/images/primefact.png";
 import icastasks from "./assets/images/icastasks.png";
+import myportfolio from "./assets/images/myportfolio.png";
 
 // Technical Skills Data
 export const TECHNICAL_SKILLS_DATA = [
@@ -126,28 +127,37 @@ export const PROJECT_DATA = [
         title: "Book with DDC",
         status: "Complete",
         tech: "C#, JavaScript, ASP.NET MVC, MSSQL",
-        description: `"Book with DDC" is a web-based appointment management system designed for Dominguez Dental Clinic, which was the focus of my capstone project. I collaborated with two team members on its development using the ASP.NET MVC framework with MSSQL for the database management. I made significant contributions to the full-stack development of the project and was primarily responsible for planning and developing the frontend design.`,
+        description: `Book with DDC is a web-based appointment management system designed for Dominguez Dental Clinic, which was the focus of my capstone project. I collaborated with two team members on its development using the ASP.NET MVC framework with MSSQL for the database management. I made significant contributions to the full-stack development of the project and was primarily responsible for planning and developing the frontend design.`,
         thumbnailSrc: bookwithddc,
         thumbnailAlt: "DDC Thumbnail",
         demoLink: "https://drive.google.com/file/d/1XWrFQ_I9jAaUrVp250F3I_ip7m5S8YUb/view?usp=sharing",
     },
     {
-        title: "Nintendo Switch Accessories",
+        title: "My Portfolio",
         status: "Complete",
-        tech: "HTML, CSS, JavaScript",
-        description: `This is a simple e-commerce website I created for an academic assessment. The site features three pages: Home, Shop, and Contact. I built the entire project using HTML, CSS, and JavaScript. I did not use a database for this project, so everything is hardcoded. I also made this website responsive so you can also view it in mobile mode.`,
-        thumbnailSrc: nintendo,
-        thumbnailAlt: "Nintendo Thumbnail",
-        demoLink: "https://drive.google.com/file/d/1GpuLWDysWZzX7f9fqw5_HEMUjp_dBltc/view?usp=sharing",
+        tech: "React, JavaScript, Node.js",
+        description: `I developed this professional portfolio website to serve as a centralized resource for potential employers. The site showcases my selected projects, highlights my technical skills and education, and provides access to key credentials, including my resume and professional social media accounts.`,
+        thumbnailSrc: myportfolio,
+        thumbnailAlt: "My Portfolio Thumbnail",
+        demoLink: "https://myportfolio-ericadominguez.netlify.app",
     },
     {
         title: "Ica's Tasks",
         status: "Complete",
-        tech: "Electron, React, TypeScript, MongoDB",
+        tech: "Electron, React, TypeScript, MongoDB, Node.js",
         description: `Ica's Tasks is a to-do list desktop widget I developed to provide a dedicated, lightweight application for managing tasks right on the screen. This personal project was built using Electron to deliver that native desktop feel, with the frontend implemented in React and TypeScript. To handle the application’s data storage, I utilized MongoDB.`,
         thumbnailSrc: icastasks,
         thumbnailAlt: "Ica's Tasks Thumbnail",
         demoLink: "https://drive.google.com/file/d/1MvJctiV2dXtdb6xCyhgY3V--_1YBnYIx/view?usp=sharing",
+    },
+    {
+        title: "Nintendo Accessories Shop",
+        status: "In Progress",
+        tech: "HTML, CSS, JavaScript",
+        description: `Developed a fully responsive e-commerce website as an academic assessment, showcasing strong foundational proficiency in HTML, CSS, and vanilla JavaScript. The site includes essential pages (Home, Shop, Contact) and was built as a purely front-end application with hardcoded data. My current plan is to refactor this project into a full-stack application and enhance the overall user interface/user experience (UI/UX).`,
+        thumbnailSrc: nintendo,
+        thumbnailAlt: "Nintendo Thumbnail",
+        demoLink: "https://drive.google.com/file/d/1GpuLWDysWZzX7f9fqw5_HEMUjp_dBltc/view?usp=sharing",
     },
     // {
     //     title: "S-ITPE003LA Summative Exam",

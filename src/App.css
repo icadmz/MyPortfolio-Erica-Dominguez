@@ -27,6 +27,13 @@ button:hover {
   background-color: transparent;
 }
 
+.resume-button:hover,
+.view-demo-button:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  background-color: transparent;
+}
+
 .container {
   display: flex;
   max-width: 1400px;
@@ -56,10 +63,6 @@ button:hover {
   gap: 1.25rem; 
 }
 
-/* .profile img {
-  width: 12rem;
-} */
-
 .profile-image {
   width: 100%; 
   height: auto;
@@ -67,12 +70,13 @@ button:hover {
 
 .resume-button {
   background-color: var(--color-secondary);
-  border: none;
+  border: 1px solid transparent;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
   color: var(--color-white);
+  box-sizing: border-box;
+  transition: border-color .15s ease, color .15s ease, background-color .15s ease;
 }
 
 .details {
@@ -85,13 +89,18 @@ button:hover {
 .details-row {
   display: flex;
   gap: 20px;
+  align-items: stretch;
+}
+
+.details .details-row > section {
+  flex: 1 1 0;
+  min-width: 0; 
 }
 
 .icons i {
   font-size: 1.5em;
   margin: 0 8px;
   color: var(--color-tertiary);
-  /* color: #97c2ec; */
   transition: color 0.3s ease;
 }
 
@@ -102,13 +111,17 @@ button:hover {
 /* EDUCATION */
 .education, .skills, .projects {
   border: 2px solid var(--color-primary);
-  /* margin-bottom: 1.5rem; */
   background-color: #ffffff;
   padding: 0;
 }
 
 .education, .skills {
   margin-bottom: 1.5rem;
+}
+
+.education-skills-projects {
+  display: flex;
+  flex-direction: column;
 }
 
 .education h3, .skills h3, .projects h3 {
@@ -160,10 +173,6 @@ button:hover {
   padding-bottom: 1.5rem;
 }
 
-/* .skills-icons {
-  display: flex;
-  justify-content: space-between;
-} */
 
 .skills-icons {
   display: grid;
@@ -183,12 +192,6 @@ button:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* .skills-icons img {
-  width: 1.8rem;
-  margin: 0 8px;
-  justify-content: center;
-} */
 
 .skills-icons img {
   max-width: 35px;
@@ -290,12 +293,13 @@ h4 {
 .view-demo-button {
   background-color: var(--color-secondary);
   color: var(--color-white);
-  border: none;
+  border: 1px solid transparent;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  /* margin-top: auto; */
   margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: border-color .15s ease, color .15s ease, background-color .15s ease;
 }
 
 .thumbnail {
@@ -389,19 +393,21 @@ h4 {
 
   .container {
     flex-direction: column;
-    gap: 5px;
+    gap: 12px;
     padding: 15px;
+    align-items: stretch;
   }
 
   .column {
     max-height: none;
-    flex: 1 1 auto;
-    margin-bottom: 20px;
+    flex: 0 0 auto;
+    min-height: 0;
   }
 
   .profile {
     max-width: 100%;
     padding: 15px;
+    gap: 0.75rem;
   }
 
   .profile img {
@@ -409,8 +415,16 @@ h4 {
   }
 
   .profile p {
-    font-size: 0.8rem;
+    /* font-size: 0.9rem; */
     padding: 1rem;
+  }
+
+  .profile > * {
+    margin-bottom: 0;
+  }
+
+  .resume-buttom {
+    margin-top: 0 !important;
   }
 
   .project-cards {
@@ -427,12 +441,12 @@ h4 {
     max-width: 20rem;
   }
 
-  .project-card h2 {
-    font-size: 1rem; 
-  }
+  /* .project-card h2 {
+    font-size: 1.1rem; 
+  } */
 
   .project-card p {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -442,8 +456,48 @@ h4 {
     margin-bottom: 2rem;
   }
 
-  .icons i {
+  /* .icons i {
     font-size: 1.2em;
+  } */
+
+  .details-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .details {
+    gap: 12px;
+  }
+
+  .details .details-row > section {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .education, .skills {
+    margin-bottom: 0;
+  }
+
+  .education, .skills, .projects {
+    margin: 0;
+  }
+
+  .education-card,
+  .skills-icons,
+  .project-cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .education-skills-projects {
+    gap: 12px; /* consistent smaller gap on mobile */
+  }
+
+  .skills-icons {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
   }
 
 }
