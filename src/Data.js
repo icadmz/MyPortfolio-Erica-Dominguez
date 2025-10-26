@@ -134,6 +134,16 @@ export const PROJECT_DATA = [
         demoLink: "https://drive.google.com/file/d/1XWrFQ_I9jAaUrVp250F3I_ip7m5S8YUb/view?usp=sharing",
     },
     {
+        title: "Prime Factorial",
+        status: "Complete",
+        tech: "C#, ASP.NET, JavaScript",
+        ide: "Microsoft Visual Studio 2022",
+        description: `A single-page web application providing users with two core mathematical utilities: prime number checking and factorial calculation. Users can input a number and instantly view the results.`,
+        thumbnailSrc: primefact,
+        thumbnailAlt: "Prime Factorial Thumbnail",
+        demoLink: "https://drive.google.com/file/d/1qNYJpkS4h0geO6nZUWuPhZv0-1xr9Cws/view?usp=drive_link",
+    },
+    {
         title: "My Portfolio",
         status: "Complete",
         tech: "React, JavaScript, Node.js",
@@ -181,15 +191,5 @@ export const PROJECT_DATA = [
     //     thumbnailAlt: "Cozy Cat Thumbnail",
     //     demoLink: "https://drive.google.com/file/d/16ogcb3xVVtHROQ99eYOMXTbsbWDnCJup/view?usp=sharing",
     // },
-    {
-        title: "Prime Factorial",
-        status: "Complete",
-        tech: "C#, ASP.NET, JavaScript",
-        ide: "Microsoft Visual Studio 2022",
-        description: `A single-page web application providing users with two core mathematical utilities: prime number checking and factorial calculation. Users can input a number and instantly view the results.`,
-        thumbnailSrc: primefact,
-        thumbnailAlt: "Prime Factorial Thumbnail",
-        demoLink: "https://drive.google.com/file/d/1qNYJpkS4h0geO6nZUWuPhZv0-1xr9Cws/view?usp=drive_link",
-    },
 ];
   
