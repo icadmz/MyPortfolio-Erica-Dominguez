@@ -126,6 +126,7 @@ function App() {
                               {project.status}
                             </h2>                            
                             <h2><i className="bi bi-stack"></i>{project.tech}</h2>
+                            <h2><i className="bi bi-file-code"></i>{project.ide}</h2>
                         </div>
                         <div className="project-text-content">
                             <p>{project.description}</p>
