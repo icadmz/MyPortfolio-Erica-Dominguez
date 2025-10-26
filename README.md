@@ -4,7 +4,7 @@
 [![Built with React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat)](https://reactjs.org/)
 [![Built with Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat)](https://vitejs.dev/)
 
-> A professional online portfolio showcasing the projects, skills, and experience of Erica Dominguez. Built with React and Vite for a fast and modern user experience.
+> A professional portfolio website built with React and Vite. This centralized resource showcases my selected projects, highlights my technical skills and education, and provides potential employers with immediate access to key credentials, including my resume and professional social media accounts.
 
 ---
 
