@@ -113,7 +113,7 @@ function App() {
 
                         {/* Text Content */}
                         <h4>{project.title}</h4>
-                        <div>
+                        <div style={{flex: 1}}>
                             <h2>
                               <i
                                 className={`bi ${
@@ -137,7 +137,7 @@ function App() {
                             href={project.demoLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{textDecoration: 'none'}}
+                            className="button-wrapper"
                         >
                             <button className="view-demo-button">
                                 View Video Demo <i className="bi bi-box-arrow-up-right"></i>

@@ -136,7 +136,7 @@ export const PROJECT_DATA = [
     {
         title: "Prime Factorial",
         status: "Complete",
-        tech: "C#, ASP.NET, JavaScript",
+        tech: "C#, JavaScript, ASP.NET MVC",
         ide: "Microsoft Visual Studio 2022",
         description: `A single-page web application providing users with two core mathematical utilities: prime number checking and factorial calculation. Users can input a number and instantly view the results.`,
         thumbnailSrc: primefact,
