@@ -1,7 +1,7 @@
 import './App.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import resume from './assets/pdf/Resume-Erica Dominguez.pdf';
+import resume from './assets/pdf/Resume.pdf';
 import pfp from './assets/images/pfp.jpg';
 
 import { TECHNICAL_SKILLS_DATA, PROJECT_DATA } from './Data.js';
