@@ -132,6 +132,7 @@ export const PROJECT_DATA = [
         thumbnailSrc: bookwithddc,
         thumbnailAlt: "DDC Thumbnail",
         demoLink: "https://drive.google.com/file/d/1XWrFQ_I9jAaUrVp250F3I_ip7m5S8YUb/view?usp=sharing",
+        githubLink:"https://github.com/icadmz/Book-with-DDC",
     },
     {
         title: "Prime Factorial",
@@ -142,6 +143,7 @@ export const PROJECT_DATA = [
         thumbnailSrc: primefact,
         thumbnailAlt: "Prime Factorial Thumbnail",
         demoLink: "https://drive.google.com/file/d/1qNYJpkS4h0geO6nZUWuPhZv0-1xr9Cws/view?usp=drive_link",
+        githubLink:"https://github.com/icadmz/Prime-Factorial",
     },
     {
         title: "My Portfolio",
@@ -152,6 +154,7 @@ export const PROJECT_DATA = [
         thumbnailSrc: myportfolio,
         thumbnailAlt: "My Portfolio Thumbnail",
         demoLink: "https://myportfolio-ericadominguez.netlify.app",
+        githubLink:"https://github.com/icadmz/MyPortfolio-Erica-Dominguez"
     },
     {
         title: "Ica's Tasks",
@@ -162,6 +165,7 @@ export const PROJECT_DATA = [
         thumbnailSrc: icastasks,
         thumbnailAlt: "Ica's Tasks Thumbnail",
         demoLink: "https://drive.google.com/file/d/1MvJctiV2dXtdb6xCyhgY3V--_1YBnYIx/view?usp=sharing",
+        githubLink:"",
     },
     {
         title: "Nintendo Accessories Shop",
@@ -172,6 +176,7 @@ export const PROJECT_DATA = [
         thumbnailSrc: nintendo,
         thumbnailAlt: "Nintendo Thumbnail",
         demoLink: "https://drive.google.com/file/d/1GpuLWDysWZzX7f9fqw5_HEMUjp_dBltc/view?usp=sharing",
+        githubLink:"",
     },
     {
         title: "S-ITPE003LA Summative",
@@ -182,6 +187,7 @@ export const PROJECT_DATA = [
         thumbnailSrc: summative,
         thumbnailAlt: "Summative Thumbnail",
         demoLink: "https://drive.google.com/file/d/16QAFwcDIRQAnbnE6FCRAsO4tu-gh2KQe/view?usp=sharing",
+        githubLink:"",
     },
     // {
     //     title: "Cozy Cat Shop",

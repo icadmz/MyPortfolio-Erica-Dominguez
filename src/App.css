@@ -28,7 +28,8 @@ button:hover {
 }
 
 .resume-button:hover,
-.view-demo-button:hover {
+.view-demo-button:hover,
+.github-button:hover {
   border-color: var(--color-secondary);
   color: var(--color-secondary);
   background-color: transparent;
@@ -298,16 +299,61 @@ h4 {
     text-decoration: none;
 }
 
+.project-buttons {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 1rem;
+}
+
 .view-demo-button {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  border: 1px solid transparent;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  transition: border-color .15s ease, color .15s ease, background-color .15s ease;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: all .15s ease;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.github-button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 44px; 
+    height: 44px;
+    padding: 0; 
+    margin: 0;
+}
+
+.github-button i {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block;
+    line-height: 1; 
+    font-size: 1.4rem;
+}
+
+.github-button:disabled, 
+.github-button.no-link {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .thumbnail {
@@ -457,12 +503,7 @@ h4 {
     max-width: 20rem;
   }
 
-  /* .project-card h2 {
-    font-size: 1.1rem; 
-  } */
-
   .project-card p {
-    /* font-size: 0.9rem; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -473,12 +514,22 @@ h4 {
 
   .view-demo-button {
     padding: 8px 16px;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .github-button {
+    padding: 8px 16px;
   }
 
-  /* .icons i {
-    font-size: 1.2em;
-  } */
+  .project-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .view-demo-button, .github-button {
+    width: 100%; 
+  }
 
   .details-row {
     flex-direction: column;

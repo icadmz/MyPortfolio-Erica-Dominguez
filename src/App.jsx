@@ -1,5 +1,7 @@
 import './App.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 import resume from './assets/pdf/Resume.pdf';
 import pfp from './assets/images/pfp.jpg';
@@ -9,6 +11,24 @@ import { TECHNICAL_SKILLS_DATA, PROJECT_DATA } from './Data.js';
 function App() {
 
   return (
+  <>
+    <Toaster 
+      position="top-right"
+      reverseOrder={false} 
+      toastOptions={{
+      style: {
+        fontFamily: "'Quicksand', sans-serif",
+        fontSize: '0.9rem',
+        background: 'var(--color-primary)',
+        color: 'var(--color-white)',
+        borderRadius: '5px',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+        padding: '12px 20px',
+        gap: '8px',
+      },
+    }}
+    />
+
     <div className="container">
       {/* First Column: Profile Section */}
       <div className="column profile">
@@ -131,18 +151,40 @@ function App() {
                         <div className="project-text-content">
                             <p>{project.description}</p>
                         </div>
-
-                        {/* Button */}
-                        <a 
-                            href={project.demoLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="button-wrapper"
-                        >
-                            <button className="view-demo-button">
-                                View Video Demo <i className="bi bi-box-arrow-up-right"></i>
-                            </button>
-                        </a>
+                        {/* Project Buttons */}
+                        <div className="project-buttons">
+                          {/* View Video Demo Button */}
+                          <a 
+                              href={project.demoLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="button-wrapper"
+                          >
+                              <button className="view-demo-button">
+                                  View Video Demo <i className="bi bi-box-arrow-up-right"></i>
+                              </button>
+                          </a>
+                          {/* Github Button */}
+                          <a 
+                              href={project.githubLink ? project.githubLink : "#!"} 
+                              target={project.githubLink ? "_blank" : "_self"}
+                              rel="noopener noreferrer"
+                              onClick={(e) => {
+                                if (!project.githubLink) {
+                                  e.preventDefault();
+                                  toast('No Github repository available for this project.', {
+                                    icon: <i className="bi bi-slash-circle" style={{ color: '#ff7575dd' }}></i>,
+                                    duration: 3000,
+                                  });
+                                }
+                              }}
+                              style={{ textDecoration: 'none' }}
+                          >
+                              <button className={`github-button ${!project.githubLink ? 'no-link' : ''}`}>
+                                  <i className="bi bi-github"></i>
+                              </button>
+                          </a>
+                        </div>
                     </div>
                 ))}
             </div>
@@ -152,6 +194,7 @@ function App() {
         </div>
       </div>
     </div>
+  </>
   );
 }
 
