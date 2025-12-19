@@ -131,7 +131,8 @@ export const PROJECT_DATA = [
         description: `Developed a full-stack appointment management system designed to resolve operational challenges and scheduling errors caused by the Dominguez Dental Clinic’s prior manual processes, ultimately benefiting both staff and patients. Built using the ASP.NET MVC framework and MSSQL, I collaborated with two team members and made significant contributions across the entire stack. My role encompassed all-around development, including front-end design and coding, implementing core back-end logic, and managing the database architecture. Key features developed include online patient booking, secure appointment access, patient record storage, and personal profile management.`,
         thumbnailSrc: bookwithddc,
         thumbnailAlt: "DDC Thumbnail",
-        demoLink: "https://drive.google.com/file/d/1XWrFQ_I9jAaUrVp250F3I_ip7m5S8YUb/view?usp=sharing",
+        // demoLink: "https://drive.google.com/file/d/1XWrFQ_I9jAaUrVp250F3I_ip7m5S8YUb/view?usp=sharing",
+        demoLink: "http://dominguezdental-001-site1.qtempurl.com/",
         githubLink:"https://github.com/icadmz/Book-with-DDC",
     },
     {

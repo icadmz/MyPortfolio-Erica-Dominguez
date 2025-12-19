@@ -161,7 +161,7 @@ function App() {
                               className="button-wrapper"
                           >
                               <button className="view-demo-button">
-                                  View Video Demo <i className="bi bi-box-arrow-up-right"></i>
+                                  View Demo <i className="bi bi-box-arrow-up-right"></i>
                               </button>
                           </a>
                           {/* Github Button */}
